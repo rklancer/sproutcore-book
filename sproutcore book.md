@@ -10,10 +10,9 @@ This book aims to become a comprehensive introduction to Sproutcore, an open sou
 
 Fortunately, with the help of the approachable and growing community of Sproutcore developers--a community which exists because of Charles Jolley's determination to keep his project genuinely open--the situation is rapidly improving. This book is one of several efforts that are being made to help mainstream developers use Sproutcore to write apps that are as fast, fluid, and flexible as any native app--yet that run by clicking on a link in nearly any web browser.
 
-But first, a word of warning. Beware that Sproutcore requires a very different mindset than traditional front-end web development. Sproutcore is not a tool for writing progressively enhanced web documents; it is a tool for writing apps that execute on top of what one might call "the HTML and Javascript platform". To use it well requires mastering a large number of libraries and tools that work together and cannot be learned overnight. More profoundly, Sproutcore achieves native-like performance by structuring apps in an unfamiliar way. Download and browser rendering times have decreased dramatically but the time required for round-trips to servers has not. Sproutcore therefore uses client-side Javascript to render your app's screens from in-memory data and it encourages you to move most of your app's logic to the client. If you have instincts informed by writing traditional web applications, this will seem wrong.
+This book has three sections.
 
-
-
+But first, a word of warning. Sproutcore requires a very different mindset than traditional front-end web development. It is a tool for writing *apps* that execute on top of what one might call "the HTML and Javascript platform"--not documents. To use it well requires mastering a large number of libraries and tools that work together and cannot be learned overnight. More profoundly, Sproutcore achieves native-like performance by structuring apps in an unfamiliar way. Download and browser rendering times have decreased dramatically but the time required for round-trips to servers has not. Sproutcore therefore uses Javascript to render your app's screens from client-side data and it encourages you to move most of your app's logic to the client. If you have instincts informed by writing traditional web applications, this will seem wrong. This book is here to help to work with the grain of Sproutcore as quickly as possible.
 
 
 ### What is Sproutcore?
