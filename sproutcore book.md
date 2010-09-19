@@ -72,11 +72,11 @@ Sproutcore rather than against it.
 
 #### Aside: Development on Windows
 
-#### Writing A Simple Application: Clock
+#### Writing A Simple Clock Application
 
 #### Using Git and Git Submodules to Manage The Clock Project
 
-#### Building the Clock Project for Deployment
+#### Building the Clock Application for Deployment
 
 #### Some Tutorials to Try
 
@@ -88,7 +88,7 @@ Sproutcore Basics
 
 ### Sproutcore's Custom Class and Object System
 
-#### How to "Read" the Clock App
+#### How to "Read" the Clock Application
 
 #### Introducing `SC.Object`
 
