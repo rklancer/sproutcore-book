@@ -50,8 +50,10 @@ and browser rendering times have decreased dramatically even as round-trip
 times to servers have not, Sproutcore is designed to use Javascript to render
 essentially all of your app's screens live, on the client. Its other
 abstractions are similarly designed to make it easy to move your app's logic
-to the client. These and concomitant design decisions feel wrong and strange
-at first. However, this book is here partly to make sure that you internalize the thinking behind these design decisions and thereby work with the grain of Sproutcore and not against it.
+to the client. These design decisions feel wrong and strange at first.
+However, this book is here partly to make sure that you internalize the
+thinking behind these decisions and thereby work with the grain of Sproutcore
+and not against it.
 
 
 ### What is Sproutcore?
