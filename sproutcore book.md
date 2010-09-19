@@ -49,7 +49,7 @@ Sproutcore requires you to put aside certain web development habits.
 Sproutcore's designers observed that download and browser rendering times are
 decreasing at a steady rate while round-trip times to servers simply cannot,
 and therefore designed Sproutcore to render your apps's HTML using Javascript
-on the client; and in general they encourage you to move as much application
+on the client. In general they encourage you to move as much application
 logic to the client as possible. Building an app this way may feel wrong at
 first. This book is here to help you grasp the thinking behind these decisions
 and thereby work with the grain of Sproutcore rather than against it.
