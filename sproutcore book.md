@@ -20,7 +20,7 @@ Sproutcore developers--a community which exists because of maintainer Charles
 Jolley's determination to keep his project genuinely open--the situation is
 rapidly improving. This book is one of several efforts to help mainstream
 developers learn to use Sproutcore to write apps that are as fast, fluid, and
-flexible as any native app--yet that can be accessed in nearly any web browser
+flexible as any native app, yet that can be accessed in nearly any web browser
 merely by clicking on a link.
 
 This book has three sections. The Introduction explores briefly what it means
