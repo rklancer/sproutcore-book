@@ -4,60 +4,54 @@ The Sproutcore Book
 Introduction 
 ------------
 
-### About This Book
+### About This Document
 
-This book aims to become a comprehensive introduction to Sproutcore, an open
-source framework for building apps with HTML and Javascript. Sproutcore is
-well-designed, comprehensive, and highly tuned as a result of early adoption
-by Apple as the foundation of the Mobile Me and iWork.com services. Yet the
-combination of Sproutcore's comprehensive scope and its adoption as a
-non-revenue-generating product by a secretive company have worked against it.
-Only the most motivated or stubborn non-Apple developers have had cause to
-read through its source code and its sometimes sparse documentation enough to
-learn how to use it to build professional-class applications.
+This book aims to become a standard introduction to Sproutcore, an open source
+framework for building native-style apps with HTML and Javascript. Sproutcore
+is comprehensive, well-designed, and highly tuned as a result of its early
+adoption by Apple for powering the Mobile Me and iWork.com web apps. Yet
+Sproutcore's massive scope and its history of development at a secretive
+company have worked against it. Until recently only the most motivated and
+stubborn non-Apple developers have had cause to study its voluminous source
+code and comparatively sparse documentation well enough to truly learn it.
 
 Fortunately, with the help of the approachable and growing community of
 Sproutcore developers--a community which exists because of maintainer Charles
 Jolley's determination to keep his project genuinely open--the situation is
-rapidly improving. This book is one of several efforts that are being made to
-help mainstream developers use Sproutcore to write apps that are as fast,
-fluid, and flexible as any native app--yet that can be run in nearly any web
-browser merely by clicking on a link.
+rapidly improving. This book is one of several efforts to help mainstream
+developers learn to use Sproutcore to write apps that are as fast, fluid, and
+flexible as any native app--yet that can be accessed in nearly any web browser
+merely by clicking on a link.
 
 This book has three sections. The Introduction explores briefly what it means
-to say that Sproutcore helps you write web apps, and describes the
-technological features of Sproutcore that help you to do so. Because you
-should be eager to get busy at this point, the second chapter describes how to
-install Sproutcore, describes what you see when you install it, and points you
-to several hands-on tutorials.
+to say that Sproutcore helps you write native-style web apps, and describes
+the technological features of Sproutcore that help you to do so. Since you
+will probably be eager to get your hands dirty at that point, the second
+chapter describes how to install Sproutcore, describes the components of the installation, and points you to several hands-on tutorials.
 
 The second section, "Sproutcore Basics", is a tour of the individual
 components of Sproutcore that every Sproutcore developer should be familiar
-with. After having read it, you should be able to construct a basic app with
-little fear that you are ignoring large parts of Sproutcore. Important
-"gotchas" and tips are highlighted, where necessary with links to reference
-documents or the more detailed third section, in order to provide context.
+with. After having read it, you should be able to build a straightforward app with little trouble. Important "gotchas" and tips are highlighted and annotated, where necessary, with links to reference documents or the more detailed third section that provide more context.
 
 Finally, the third section, "Sproutcore in Detail", revisits most of the
 components discussed in "Sproutcore Basics" at a more reference-like level of
-detail, though still in narrative fashion. After reading this section, you
-should be well equipped to dive into the Sproutcore reference documentation
-and source code without feeling lost.
+detail. After having read this section, you should be well equipped to dive
+into the Sproutcore reference documentation and source code without feeling
+lost.
 
 Some words of warning before you proceed: Sproutcore requires a very different
 mindset than traditional front-end web development. It is not a tool for
-writing progressively enhanced web documents but is for writing *apps* that
-run atop what one might call "the HTML and Javascript platform". To use it
-well requires mastering a large number of libraries and tools that work
-together and cannot be learned overnight. More profoundly, Sproutcore may
-require you to unlearn some web development habits. Because download and
-browser rendering times have decreased dramatically but the time required for
-round-trips to servers has not, Sproutcore uses Javascript to render your
-app's screens from client-side data. It also encourages you to move most of
-your app's logic to the client. If you write web applications this may seem
-wrong. This book is here to keep these instincts from getting in your way as
-you learn to work with the grain of Sproutcore.
-
+writing progressively enhanced web documents but is for writing *apps*,
+distinct from your content, that use HTML and Javascript as an execution
+platform. To use it well requires mastering a large number of libraries and
+tools that work together and cannot be learned overnight. More profoundly,
+Sproutcore requires you to unlearn web development habits. Because download
+and browser rendering times have decreased dramatically even as round-trip
+times to servers have not, Sproutcore is designed to use Javascript to render
+essentially all of your app's screens live, on the client. Its other
+abstractions are similarly designed to make it easy to move your app's logic
+to the client. These and concomitant design decisions feel wrong and strange
+at first. However, this book is here partly to make sure that you internalize the thinking behind these design decisions and thereby work with the grain of Sproutcore and not against it.
 
 ### What is Sproutcore?
 
