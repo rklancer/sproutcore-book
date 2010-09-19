@@ -23,11 +23,13 @@ developers learn to use Sproutcore to write apps that are as fast, fluid, and
 flexible as any native app, yet that can be accessed in nearly any web browser
 merely by clicking on a link.
 
-This book has three sections. The Introduction explores briefly what it means
-to say that Sproutcore helps you write native-style web apps, and describes
-the technological features of Sproutcore that help you to do so. Since you
-will probably be eager to get your hands dirty at that point, the second
-chapter describes how to install Sproutcore, describes the components of the installation, and points you to several hands-on tutorials.
+This book has three sections. This section, the Introduction, explores briefly what
+it means to say that Sproutcore helps you write native-style web apps, and
+describes the technological features of Sproutcore that help you to do so.
+Since you will probably be eager to get your hands dirty at that point, the
+second chapter of the Introduction goes on to describe how to install
+Sproutcore, describes the components of the installation, and points you to
+several hands-on tutorials.
 
 The second section, "Sproutcore Basics", is a tour of the individual
 components of Sproutcore that every Sproutcore developer should be familiar
