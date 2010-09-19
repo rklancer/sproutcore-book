@@ -42,18 +42,17 @@ lost.
 Some words of warning before you proceed: Sproutcore requires a very different
 mindset than traditional front-end web development. It is not a tool for
 writing progressively enhanced web documents but is for writing *apps*,
-distinct from your content, that use HTML and Javascript as an execution
+distinct from your content, that treat HTML and Javascript as an execution
 platform. To use it well requires mastering a large number of libraries and
 tools that work together and cannot be learned overnight. More profoundly,
-Sproutcore requires you to unlearn web development habits. Because download
-and browser rendering times have decreased dramatically even as round-trip
-times to servers have not, Sproutcore is designed to use Javascript to render
-essentially all of your app's screens live, on the client. Its other
-abstractions are similarly designed to make it easy to move your app's logic
-to the client. These design decisions feel wrong and strange at first.
-However, this book is here partly to make sure that you internalize the
-thinking behind these decisions and thereby work with the grain of Sproutcore
-and not against it.
+Sproutcore requires you to put aside certain web development habits.
+Sproutcore's designers observed that download and browser rendering times are
+decreasing at a steady rate while round-trip times to servers simply cannot,
+and therefore designed Sproutcore to render your apps's HTML using Javascript
+on the client; and in general they encourage you to move as much application
+logic to the client as possible. Building an app this way may feel wrong at
+first. This book is here to help you grasp the thinking behind these decisions
+and thereby work with the grain of Sproutcore rather than against it.
 
 
 ### What is Sproutcore?
