@@ -23,13 +23,13 @@ developers learn to use Sproutcore to write apps that are as fast, fluid, and
 flexible as any native app, yet that can be accessed in nearly any web browser
 merely by clicking on a link.
 
-This book has three sections. This section, the Introduction, explores briefly what
-it means to say that Sproutcore helps you write native-style web apps, and
-describes the technological features of Sproutcore that help you to do so.
+This book has three sections. This section, the Introduction, explores briefly
+what it means to say that Sproutcore helps you write native-style web apps,
+and describes the technological features of Sproutcore that help you to do so.
 Since you will probably be eager to get your hands dirty at that point, the
-second chapter of the Introduction goes on to describe how to install
-Sproutcore, describes the components of the installation, and points you to
-several hands-on tutorials.
+second chapter of the Introduction describes how to install Sproutcore,
+describes the components of the installation, and points you to several
+hands-on tutorials.
 
 The second section, "Sproutcore Basics", is a tour of the individual
 components of Sproutcore that every Sproutcore developer should be familiar
@@ -63,7 +63,24 @@ Sproutcore rather than against it.
 
 #### How Sproutcore Does It
 
-### Installing Sproutcore, Finding the Tutorials, and Setting Up a Development Environment
+
+### Getting Started
+
+#### Installing the Sproutcore Gem
+
+#### Setting up TextMate
+
+#### Aside: Development on Windows
+
+#### Writing A Simple Application: Clock
+
+#### Using Git and Git Submodules to Manage The Clock Project
+
+#### Building the Clock Project for Deployment
+
+#### Some Tutorials to Try
+
+#### Javascript Resources
 
 
 Sproutcore Basics 
@@ -71,25 +88,42 @@ Sproutcore Basics
 
 ### Sproutcore's Custom Class and Object System
 
-### How the Build Tools, Development Server, and Your Browser Turn Your Project Files into a Running Application
+#### How to "Read" the Clock App
+
+#### Introducing `SC.Object`
+
+#### Mixins, `init()`, `initMixin()`, and `sc_super()`
+
 
 ### Tying an Application Together Using Key Value Coding, Key Value Observing, and Bindings
 
+
+### How the Build Tools, Development Server, and Your Browser Turn Your Project Files into a Running Application
+
+
 ### Storing Your Data With Models, RecordArrays, and Fixtures
+
 
 ### Using Controllers to Manage Models and Views
 
+
 ### Using Views to Make Actual HTML
+
 
 ### Managing Views and Panes with Container Views and Page Objects
 
+
 ### Using Common View Classes To Solve Common Problems
+
 
 ### Using Collection Views To Display Collections of Objects
 
+
 ### Implementing a Data Source to Store Persistent Data
 
+
 ### The Architect's Toolkit: Routes, Pages, States, Application Events, and High Level Controllers
+
 
 ### Using QUnit and TestRunner to Unit Test Your Application
 
@@ -99,34 +133,50 @@ Sproutcore In Depth
 
 ### Classes, Objects, and Mixins
 
+
 ### The Build System and Application Deployment
+
 
 ### Setters and Getters, Observers, and Bindings
 
+
 ### Records, Queries, and RecordArrays
+
 
 ### The Data Store
 
+
 ### Data Sources
+
 
 ### Object Controllers
 
+
 ### Array Controllers
+
 
 ### The View Lifecycle and Rendering Path
 
+
 ### Writing Custom View Classes
+
 
 ### Collection Views
 
+
 ### Writing Custom Collection Views
+
 
 ### Event Handling
 
+
 ### Runloops
+
 
 ### ResponderContexts and the Responder Chain
 
+
 ### SC.routes
+
 
 ### CoreTest, TestRunner and Test Fixtures
