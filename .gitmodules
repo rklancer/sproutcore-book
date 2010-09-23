@@ -1,0 +1,3 @@
+[submodule "sproutcore-examples"]
+	path = sproutcore-examples
+	url = git://github.com/rklancer/sproutcore-examples.git
