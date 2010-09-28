@@ -72,13 +72,9 @@ Sproutcore rather than against it.
 
 #### Aside: Development on Windows
 
-#### Writing A Simple Clock Application
+#### Tutorial: A test-driven Hello, World
 
-#### Using Git and Git Submodules to Manage The Clock Project
-
-#### Building the Clock Application for Deployment
-
-#### Some Tutorials to Try
+#### Building the Hello Application for Deployment
 
 #### Javascript Resources
 
@@ -88,7 +84,7 @@ Sproutcore Basics
 
 ### Sproutcore's Custom Class and Object System
 
-#### How to "Read" the Clock Application
+#### How to "Read" the Hello Application
 
 #### Introducing `SC.Object`
 
