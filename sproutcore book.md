@@ -74,19 +74,20 @@ thereby work with the grain of Sproutcore rather than against it.
 
 Although developing a Sproutcore app requires Javascript skills exclusively,
 the Sproutcore build and development helpers are written in Ruby and are
-packaged in a RubyGem which also contains the latest stable
-version of the Sproutcore Javascript library.
+packaged in a RubyGem which also contains the latest stable version of the
+Sproutcore Javascript library.
 
 Therefore, this is how to install Sproutcore:
 
-    sudo gem install sproutcore
-    
-This command will also install a number of Sproutcore's dependent RubyGems
-(aka "gems"). At the moment, the Sproutcore tools work most fastest with the
-latest version of Ruby 1.9, although they also work with Ruby 1.8.6 and 1.8.7.
-To find the version of Ruby installed on your system, type:
+    $ sudo gem install sproutcore
+   
+(In this and subsequent examples, the `$` indicates a command prompt.) This
+command will also install a number of Sproutcore's dependent RubyGems (aka
+"gems"). At the moment, the Sproutcore tools work most fastest with the latest
+version of Ruby 1.9, although they also work with Ruby 1.8.6 and 1.8.7. To
+find the version of Ruby installed on your system, type:
 
-    ruby --version
+    $ ruby --version
     
 Instructions for upgrading Ruby are not included here; however, see the tip
 below about using RVM, the Ruby Version Manager.
@@ -97,7 +98,7 @@ making it unnecessary to update the gem to track updates to the Javascript
 library. However, updates to the build tools are occasionally released. When
 they are, you can install them by updating the gem as follows:
 
-    sudo gem update sproutcore
+    $ sudo gem update sproutcore
 
 
 _Tip_: If you want to update Ruby without mucking around with the system Ruby,
@@ -106,17 +107,17 @@ may want to consider using RVM, the [Ruby Version Manager](http://rvm.beginrescu
 If you were to install RVM (see the directions on the RVM website), you could
 install Ruby 1.9.2 without overwriting your system Ruby as follows:
 
-    rvm --install 1.9.2
+    $ rvm --install 1.9.2
     
 Once you have installed the Ruby version you want, you can create a so-called
 "gemset" that contains just the gems required for Sproutcore:
 
-    rvm use 1.9.2                  # use Ruby version 1.9.2 in this process
-    rvm gemset create sproutcore   # create a fresh gemset called 'sproutcore'
-    rvm use 1.9.2@sproutcore       # use gems from/install gems to the new gemset
-    gem install sproutcore         # install sproutcore and dependent gems to new gemset
+    $ rvm use 1.9.2                  # use Ruby version 1.9.2 in this process
+    $ rvm gemset create sproutcore   # create a fresh gemset called 'sproutcore'
+    $ rvm use 1.9.2@sproutcore       # use gems from/install gems to the new gemset
+    $ gem install sproutcore         # install sproutcore and dependent gems to new gemset
 
-Note that `sudo` is not required to install gems to a gemset
+Note that `sudo` is not required to install gems to a gemset.
 
 
 #### What is included in the Sproutcore Gem
@@ -157,8 +158,69 @@ applications' API, together with HTML-formatted source code. It is the tool
 used to generate [http://docs.sproutcore.com](http://docs.sproutcore.com/).
 
 #### Testing your Installation By Creating and Running the Welcome App
+q
+`cd` to your favorite development directory and run the command:
 
-Once you have installed the Sproutcore gem, you can test your setup by creating and running a simple application.
+    $ sc-init examples
+    
+You can choose whatever directory name you like for the argument to `sc-init`.
+
+The command should run and produce output similar to the following:
+
+     ~ Created directory at examples
+     ~ Created file at examples/Buildfile
+     ~ Created file at examples/README
+     ~ Created directory at apps
+     ~ Created directory at apps/examples
+     ~ Created file at apps/examples/core.js
+     ~ Created file at apps/examples/main.js
+     ~ Created directory at apps/examples/resources
+     ~ Created file at apps/examples/resources/loading.rhtml
+     ~ Created file at apps/examples/resources/main_page.js
+    Your new SproutCore project is ready!
+
+    To get started, you can find your initial application in the "apps" directory.
+
+As you may be able to guess from the output, the `sc-init` generator creates a
+Sproutcore "project" directory at `examples` (or whatever project name you
+chose in the argument to `sc-init`) and filled it with some boilerplate
+content. This content includes a complete, simple Sproutcore app, which at the
+moment is also called `examples`.
+
+A single project directory can contain multiple applications. Each folder in
+the `apps` directory represents a different application. Applications in the
+same project share a Buildfile (which customizes how `sc-build` and
+`sc-server` construct the built application) and a `frameworks` directory (not
+yet shown) where you can store common Javascript code shared between the
+applications in a project.
+
+You can run the simple application created by `sc-init`. Change to the
+examples folder and run `sc-server` as follows:
+
+    $ cd examples
+    $ sc-server -v
+
+The `-v` option specifies verbose operation, in which `sc-server` logs to the
+terminal window which file it is serving as it serves it. This is helpful for
+understanding what `sc-server` is doing.
+
+Now, open [http://localhost:4020/](http://localhost:4020/) in a web browser.
+There is likely to be a pause as `sc-server` thinks (it is spidering the
+Sproutcore source and the applications in your project folder, and caching the
+results into a newly-created `tmp` directory in the root of your project for
+speedier loading on subsequent reloads).
+
+After a few moments, you should see a "Sproutcore Developer Tools" control
+open up in the center of the page, presenting a choice of several applications
+to load, with a "Load Application" button below.
+
+Choose the 'examples' application and click "Load Application". You should see
+a screen with the text:
+
+    Welcome to SproutCore!
+      
+displayed in the center of the page. If so, congratulations! Your Sproutcore
+installation is ready to use.
 
 
 #### Aside: Development on Windows
@@ -170,7 +232,6 @@ Once you have installed the Sproutcore gem, you can test your setup by creating 
 * You can install a very helpful "Sproutcore bundle"
 * tip: once you start an app, open the app folder not the
 
-#### Building the Welcome App for Deployment
 
 #### Tutorial: A test-driven Hello, World
 
