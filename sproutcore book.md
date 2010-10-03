@@ -27,13 +27,17 @@ This book has three sections. This section, the Introduction, explores briefly
 what it means to say that Sproutcore helps you write native-style web apps,
 and describes the technological features of Sproutcore that help you to do so.
 Since you will probably be eager to get your hands dirty at that point, the
-second chapter of the Introduction describes how to install Sproutcore,
-describes the components of the installation, and points you to several
-hands-on tutorials.
+second chapter of the Introduction describes how to install Sproutcore and
+describes the components of the installation. It includes a tutorial that
+shows you how to write, test, and deploy a "hello, world" application that
+implements some some basic behavior.
 
 The second section, "Sproutcore Basics", is a tour of the individual
 components of Sproutcore that every Sproutcore developer should be familiar
-with. After having read it, you should be able to build a straightforward app with little trouble. Important "gotchas" and tips are highlighted and annotated, where necessary, with links to reference documents or the more detailed third section that provide more context.
+with. After having read it, you should be able to build a straightforward app
+with little trouble. Important "gotchas" and tips are highlighted and
+annotated, where necessary, with links to reference documents or the more
+detailed third section that provide more context.
 
 Finally, the third section, "Sproutcore in Detail", revisits most of the
 components discussed in "Sproutcore Basics" at a more reference-like level of
@@ -50,11 +54,11 @@ tools that work together and cannot be learned overnight. More profoundly,
 Sproutcore requires you to put aside certain web development habits.
 Sproutcore's designers observed that download and browser rendering times are
 decreasing at a steady rate while round-trip times to servers simply cannot,
-and therefore designed Sproutcore to render your apps's HTML using Javascript
-on the client. In general they encourage you to move as much application logic
-to the client as possible. This may feel wrong. This book is here to help you
-grasp the thinking behind these decisions and thereby work with the grain of
-Sproutcore rather than against it.
+and therefore designed Sproutcore to construct your apps's HTML on the client,
+using Javascript. In general they provide tools that help you move as much
+application logic to the client as possible. This may feel wrong at first.
+This book is here to help you grasp the thinking behind these decisions and
+thereby work with the grain of Sproutcore rather than against it.
 
 
 ### What is Sproutcore?
