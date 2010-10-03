@@ -70,15 +70,95 @@ thereby work with the grain of Sproutcore rather than against it.
 
 ### Getting Started
 
-#### Installing the Sproutcore Gem
+#### Installing Sproutcore
 
-#### Setting up TextMate
+Although developing a Sproutcore app requires Javascript skills exclusively,
+the Sproutcore build and development helpers are written in Ruby and are
+packaged in a RubyGem which also contains the latest stable
+version of the Sproutcore Javascript library.
+
+Therefore, this is how to install Sproutcore:
+
+    sudo gem install sproutcore
+    
+This command will also install a number of Sproutcore's dependent RubyGems
+(aka "gems"). At the moment, the Sproutcore tools work most fastest with the
+latest version of Ruby 1.9, although they also work with Ruby 1.8.6 and 1.8.7.
+To find the version of Ruby installed on your system, type:
+
+    ruby --version
+
+If you want to update the system Ruby and/or prefer to maintain independent
+sets of gems for different purposes, you may want to consider using
+[RVM](http://rvm.beginrescueend.com/, "RVM"). If you were to install RVM (see
+the directions on the RVM website), you could install Ruby 1.9.2 without
+overwriting your system Ruby as follows:
+
+    rvm --install 1.9.2
+    
+We will see that there is an easy pattern for supplanting the gem-supplied
+version of the Sproutcore Javascript library in your individual projects,
+making it unnecessary to update the gem to track updates to the Javascript
+library. However, updates to the build tools are occasionally released. When
+they are, you can install them by updating the gem as follows:
+
+    sudo gem update sproutcore
+
+Note that the `sudo` is not required if you use RVM.
+
+#### What is included in the Sproutcore Gem
+
+The Sproutcore gem includes two major components: the build and development
+tools, and the Sproutcore Javascript itself. Supposing that gems are installed
+into the directory `$GEM_HOME` and the current Sproutcore version is 1.4.1,
+the build tools are copied into `$GEM_HOME/bin`, and the Javascript library is
+rooted at `$GEM_HOME/gems/sproutcore-1.4.1/lib/frameworks/sproutcore`.
+
+The Javascript library is the subject of most of the rest of this book. Don't
+worry about the obscure location; it is easy to install an updated version of
+the Sproutcore Javascript library into a more-accessible location inside your
+project.
+
+Here is a quick overview of the command-line build tools:
+
+* `sc-build`: This follows the dependencies you declare between the Javascript
+files in your application and outputs the compressed HTML, Javascript, and CSS
+files that comprise your application. These are put into a directory whose
+name is an MD5 hash that uniquely identifies one distinct build of your
+application. You deploy your application by copying the files produced by
+`sc-build` to a static web server.
+
+* `sc-server`: This web server serves your application during development. It
+watches for changes in your project directory as you develop, allowing you to
+make changes to your Javascript on the fly and observe the resulting changes
+by hitting the reload button in your browser.
+
+* `sc-init`: This 'generator' initializes a new Sproutcore project directory.
+
+* `sc-gen`: This 'generator' allows you to generate the appropriate
+boilerplate code for several kinds of Sproutcore object with a single command.
+
+* `sc-docs`: This documentation builder scans your application folder for
+jsdoc-formatted comments and outputs a browseable HTML representation of your
+applications' API, together with HTML-formatted source code. It is the tool
+used to generate [http://docs.sproutcore.com](http://docs.sproutcore.com/).
+
+#### Testing your Installation By Creating and Running the Welcome App
+
+
 
 #### Aside: Development on Windows
 
-#### Tutorial: A test-driven Hello, World
 
-#### Building the Hello Application for Deployment
+#### Aside: Setting up TextMate
+
+* The most common development environment is TextMate
+* You can install a very helpful "Sproutcore bundle"
+* tip: once you start an app, open the app folder not the
+
+#### Building the Welcome App for Deployment
+
+#### Tutorial: A test-driven Hello, World
 
 #### Javascript Resources
 
@@ -96,6 +176,8 @@ Sproutcore Basics
 
 
 ### Tying an Application Together Using Key Value Coding, Key Value Observing, and Bindings
+
+### Tutorial Break: Making a Slick, Touch-enabled App
 
 
 ### How the Build Tools, Development Server, and Your Browser Turn Your Project Files into a Running Application
