@@ -87,15 +87,10 @@ latest version of Ruby 1.9, although they also work with Ruby 1.8.6 and 1.8.7.
 To find the version of Ruby installed on your system, type:
 
     ruby --version
-
-If you want to update the system Ruby and/or prefer to maintain independent
-sets of gems for different purposes, you may want to consider using
-[RVM](http://rvm.beginrescueend.com/, "RVM"). If you were to install RVM (see
-the directions on the RVM website), you could install Ruby 1.9.2 without
-overwriting your system Ruby as follows:
-
-    rvm --install 1.9.2
     
+Instructions for upgrading Ruby are not included here; however, see the tip
+below about using RVM, the Ruby Version Manager.
+
 We will see that there is an easy pattern for supplanting the gem-supplied
 version of the Sproutcore Javascript library in your individual projects,
 making it unnecessary to update the gem to track updates to the Javascript
@@ -104,7 +99,25 @@ they are, you can install them by updating the gem as follows:
 
     sudo gem update sproutcore
 
-Note that the `sudo` is not required if you use RVM.
+
+_Tip_: If you want to update Ruby without mucking around with the system Ruby,
+and/or prefer to maintain independent sets of gems for different purposes, you
+may want to consider using RVM, the [Ruby Version Manager](http://rvm.beginrescueend.com/, "RVM").
+If you were to install RVM (see the directions on the RVM website), you could
+install Ruby 1.9.2 without overwriting your system Ruby as follows:
+
+    rvm --install 1.9.2
+    
+Once you have installed the Ruby version you want, you can create a so-called
+"gemset" that contains just the gems required for Sproutcore:
+
+    rvm use 1.9.2                  # use Ruby version 1.9.2 in this process
+    rvm gemset create sproutcore   # create a fresh gemset called 'sproutcore'
+    rvm use 1.9.2@sproutcore       # use gems from/install gems to the new gemset
+    gem install sproutcore         # install sproutcore and dependent gems to new gemset
+
+Note that `sudo` is not required to install gems to a gemset
+
 
 #### What is included in the Sproutcore Gem
 
@@ -145,6 +158,7 @@ used to generate [http://docs.sproutcore.com](http://docs.sproutcore.com/).
 
 #### Testing your Installation By Creating and Running the Welcome App
 
+Once you have installed the Sproutcore gem, you can test your setup by creating and running a simple application.
 
 
 #### Aside: Development on Windows
